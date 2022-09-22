@@ -14,7 +14,27 @@ const routes: Routes = [
   {
     path: 'vzfs5',
     loadChildren: () => import('./vzfs5/vzfs5.module').then( m => m.Vzfs5PageModule)
+  },  {
+    path: 'minions2',
+    loadChildren: () => import('./minions2/minions2.module').then( m => m.Minions2PageModule)
   },
+  {
+    path: 'homemtoronto',
+    loadChildren: () => import('./homemtoronto/homemtoronto.module').then( m => m.HomemtorontoPageModule)
+  },
+  {
+    path: 'deadpool',
+    loadChildren: () => import('./deadpool/deadpool.module').then( m => m.DeadpoolPageModule)
+  },
+  {
+    path: 'homemaranha',
+    loadChildren: () => import('./homemaranha/homemaranha.module').then( m => m.HomemaranhaPageModule)
+  },
+  {
+    path: 'doutorestranho',
+    loadChildren: () => import('./doutorestranho/doutorestranho.module').then( m => m.DoutorestranhoPageModule)
+  },
+
 ];
 
 @NgModule({
